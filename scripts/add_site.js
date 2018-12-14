@@ -15,15 +15,15 @@ async function addSite(site) {
 
   // console.log('Cloning git repository')
 
-  // await git.cwd('sites')
-  //   .then(() => git.submoduleAdd(site, name))
-  //   .catch(() => {} /* error is already printed by default*/)
+  await git.cwd('sites')
+    .then(() => git.submoduleAdd(site, name))
+    .catch(() => {} /* error is already printed by default*/)
 
-  // console.log('Installing requirements')
+  console.log('Installing requirements')
 
-  // const shell = new Shell()
-  // shell.cwd(`sites/${name}`)
-  // await shell.exec(`npm i`)
+  const shell = new Shell()
+  shell.cwd(`sites/${name}`)
+  await shell.exec(`npm i`)
 
   // console.log('Generating certificates')
 

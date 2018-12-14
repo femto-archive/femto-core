@@ -1,2 +1,0 @@
-# auth
-Policy based authorisation
