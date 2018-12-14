@@ -1,2 +1,2 @@
-# femto
-Main wrapper application for all femto-host modules
+# core
+Core functionality included by all femto applications

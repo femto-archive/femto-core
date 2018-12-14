@@ -1,0 +1,31 @@
+{
+  "name": "femto",
+  "version": "1.0.0",
+  "description": "Core functionality included by all femto applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/femto-host/femto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/femto-host/femto/issues"
+  },
+  "homepage": "https://github.com/femto-host/femto#readme",
+  "dependencies": {
+    "acl": "^0.4.11",
+    "app-root-path": "^2.1.0",
+    "bluebird": "^3.5.3",
+    "ec-pem": "^0.18.0",
+    "fs-jetpack": "^2.2.0",
+    "lodash": "^4.17.11",
+    "redis": "^2.8.0",
+    "simple-git": "^1.107.0",
+    "stack-trace": "0.0.10"
+  }
+}

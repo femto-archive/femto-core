@@ -1,4 +1,7 @@
-// Femto App provides a wrapper to run all femto services.  It allows you to
-// install sites via
-// 
-//   - `npm run site:add auth`
+const Options = require('./modules/Options')
+const options = new Options()
+options.init()
+
+const Auth = require('./modules/Auth')
+
+const auth = new Auth()

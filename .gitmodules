@@ -1,0 +1,3 @@
+[submodule "sites/auth"]
+	path = sites/auth
+	url = https://github.com/femto-host/auth
