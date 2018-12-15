@@ -44,7 +44,7 @@ class Config {
           fs.readdirSync(configDir)
             .filter(file => file.endsWith('js') || file.endsWith('json'))
             .filter(file => file.split('.')[0] !== 'config')
-            .forEach(file => this.load(this.config, file.split('.')[0], require(path.join(configDir, file))))
+            .forEach(file => this.load(this.config, site.site + '.' + file.split('.')[0], require(path.join(configDir, file))))
       })
   }
 
@@ -54,7 +54,8 @@ class Config {
       delete object.global
     }
 
-    _.set(config, jPath, Object.assign(_.get(config, jPath), object))
+    const existing = _.get(config, jPath)
+    _.set(config, jPath, Object.assign(typeof existing === 'undefined' ? {} : existing, object))
   }
 
   get() {
